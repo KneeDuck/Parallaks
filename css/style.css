@@ -1,0 +1,58 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body {
+    height:100%;
+    background-color: black;
+    overflow: hidden
+}
+
+.slider{
+    height: 100%;
+}
+.slider-layer{
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+}
+.slider-layer01{
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center -300px;
+}
+
+.slider-layer02{
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center -275px;
+}
+
+.wrapper{
+    will-change: transform;
+}
+.slide{
+    overflow: hidden;
+    will-change: transform;
+}
+
+
+.man {
+    animation: fly 3s infinite alternate ease-in-out;
+    background-position: bottom 12px center ;
+    background-size: contain;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        
+        transform: translateY(100px);
+    }
+}
